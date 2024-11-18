@@ -1,0 +1,201 @@
+/* إعدادات الصفحة العامة */
+body {
+    font-family: 'Arial', sans-serif;
+    direction: rtl;
+    background-color: #f7f9fc;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* الحاوية العامة */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* العنوان */
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #4a4a8a;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #4a4a8a;
+    padding-bottom: 10px;
+}
+
+/* روابط التنقل */
+#navigationLinks {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+a.link {
+    margin: 0 15px;
+    font-size: 1.2rem;
+    color: #5b8def;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a.link:hover {
+    color: #334cbd;
+}
+
+/* تصميم الجدول */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* تلوين العناوين */
+th {
+    background-color: #5b8def;
+    color: white;
+    font-weight: bold;
+}
+
+/* تلوين الصفوف */
+tbody tr:nth-child(odd) {
+    background-color: #eef2fa;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f7f9fc;
+}
+
+/* تأثير التمرير */
+tbody tr:hover {
+    background-color: #e3e8ff;
+    transition: background-color 0.3s ease;
+}
+
+/* تصميم الأزرار */
+button {
+    padding: 10px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 6px;
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+/* ألوان الأزرار */
+button.editBtn {
+    background-color: #f39c12;
+    color: #fff;
+}
+
+button.editBtn:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+}
+
+button.deleteBtn {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+button.deleteBtn:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+button.addBtn {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+button.addBtn:hover {
+    background-color: #27ae60;
+    transform: scale(1.05);
+}
+
+/* تصميم نموذج إضافة الموظف */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f0f2f5;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* تصميم المدخلات */
+input[type="text"], input[type="number"], select {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #eef2fa;
+    color: #333;
+}
+
+/* تأثير التفاعل مع المدخلات */
+input:focus {
+    border-color: #5b8def;
+    background-color: #ffffff;
+}
+
+/* تصميم الأزرار في نموذج الإدخال */
+button[type="button"] {
+    background-color: #5b8def;
+    color: #fff;
+}
+
+button[type="button"]:hover {
+    background-color: #334cbd;
+    transform: scale(1.05);
+}
+
+/* تحسين استجابة التصميم */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    table {
+        font-size: 0.8rem;
+    }
+
+    input, select, button {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+}

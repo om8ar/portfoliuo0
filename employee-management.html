@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>إدارة الموظفين</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h2>إدارة قائمة الموظفين</h2>
+    <form id="employeeForm">
+        <input type="text" id="employeeName" placeholder="اسم الموظف" required>
+        <input type="number" id="employeePerformance" placeholder="رقم الأداء" required>
+        <button type="button" onclick="addEmployee()">إضافة موظف</button>
+    </form>
+    <table id="employeeListTable">
+        <thead>
+            <tr>
+                <th>اسم الموظف</th>
+                <th>رقم الأداء</th>
+                <th>تعديل</th>
+                <th>حذف</th>
+            </tr>
+        </thead>
+        <tbody id="employeeListBody"></tbody>
+    </table>
+</div>
+<script src="employee-management.js"></script>
+</body>
+</html>

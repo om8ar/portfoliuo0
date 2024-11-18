@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>إدارة الحضور والغياب</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>نظام إدارة الحضور والغياب</h2>
+        <div id="navigationLinks">
+            <a class="link" href="#" onclick="generateReport('daily')">تقرير يومي</a>
+            <a class="link" href="#" onclick="generateReport('weekly')">تقرير أسبوعي</a>
+            <a class="link" href="#" onclick="generateReport('monthly')">تقرير شهري</a>
+            <a class="link" href="#" onclick="generateReport('yearly')">تقرير سنوي</a>
+        </div>
+        <button class="addBtn" onclick="addAttendance()">إضافة الحضور</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>اسم الموظف</th>
+                    <th>رقم الأداء</th>
+                    <th>الحضور</th>
+                    <th>الأعمال المطلوبة</th>
+                    <th>التاريخ</th>
+                    <th>تعديل</th>
+                    <th>حذف</th>
+                </tr>
+            </thead>
+            <tbody id="employeeTableBody"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
